@@ -1,0 +1,42 @@
+88,95c88,95
+< 	"black",
+< 	"red3",
+< 	"green3",
+< 	"yellow3",
+< 	"blue2",
+< 	"magenta3",
+< 	"cyan3",
+< 	"gray90",
+---
+> 	"#df9b5f",
+> 	"#7a2a17",
+> 	"#904107",
+> 	"#5f4c1d",
+> 	"#44583e",
+> 	"#745b5f",
+> 	"#892d58",
+> 	"#880a1c",
+98,105c98,105
+< 	"gray50",
+< 	"red",
+< 	"green",
+< 	"yellow",
+< 	"#5c5cff",
+< 	"magenta",
+< 	"cyan",
+< 	"white",
+---
+> 	"#ffab98",
+> 	"#ffe786",
+> 	"#dcfc85",
+> 	"#b8f2bb",
+> 	"#e1d7e5",
+> 	"#ffbfd3",
+> 	"#ffe0bc",
+> 	"#96e5f6",
+121,122c121,122
+< static unsigned int defaultcs = 256;
+< static unsigned int defaultrcs = 257;
+---
+> static unsigned int defaultcs = 11;
+> static unsigned int defaultrcs = 10;
