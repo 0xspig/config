@@ -1,0 +1,26 @@
+4c4
+< static const unsigned int borderpx  = 1;        /* border pixel of windows */
+---
+> static const unsigned int borderpx  = 4;        /* border pixel of windows */
+17,18c17,18
+< 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+< 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+---
+> 	[SchemeNorm] = { "#b8f2bb", "#44583e", "#745b5f" },
+> 	[SchemeSel]  = { "#ffe786", "#7a2a17", "#44583e"},
+47c47
+< #define MODKEY Mod1Mask
+---
+> #define MODKEY Mod4Mask
+59c59
+< static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+---
+> static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", "#44583e", "-nf", "#b8f2bb", "-sb", "#880a1c", "-sf", "#ffd6ea", NULL };
+65c65
+< 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+---
+> 	{ MODKEY,		        XK_Return, spawn,          {.v = termcmd } },
+75c75
+< 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
+---
+> 	{ MODKEY,            		XK_c,      killclient,     {0} },
