@@ -1,0 +1,2 @@
+OPTIONS=pickup_types:$, dogname:Stitch, catname:Billie, menucolors, showexp, color
+
