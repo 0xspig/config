@@ -1,6 +1,9 @@
 #Statusbar loop
-while true; do
-   xsetroot -name "$( date +"%F %R" ) | $( cat /sys/class/power_supply/BAT0/capacity )% "
+
+export DWM_LIVE=true;
+
+while $DWM_LIVE; do
+   xsetroot -name "$( /home/tyler/.bin/dozenal-time ) | $( cat /sys/class/power_supply/BAT0/capacity )% "
    sleep 1m    # Update time every minute
 done &
 

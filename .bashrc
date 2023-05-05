@@ -2,6 +2,10 @@
 # ~/.bashrc
 #
 
+export PATH=/home/tyler/.bin:$PATH
+
+. ~/.bash_aliases
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
