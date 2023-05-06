@@ -1,0 +1,1 @@
+echo "$( date +"Q%q | %A, %B %d, %Y" ) | $(python ~/.bin/dozenal-convert.py $( date +"%H")):$(python ~/.bin/dozenal-convert.py $( date +"%M"))"
