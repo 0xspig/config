@@ -1,5 +1,3 @@
-cd ..
-ls
 sudo pacman -S tmux
 tmux
 exit
@@ -498,3 +496,5 @@ exit
 sudo pacman -Ss startup-disk
 sudo pacman -Ss startup
 sudo pacman -Ss disk
+ls -a
+exit
