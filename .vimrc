@@ -3,6 +3,7 @@ set number relativenumber
 set colorcolumn=80
 highlight Visual cterm=reverse ctermbg=none
 set autoindent
+colorscheme peachpuff
 
 
 call plug#begin('~/.vim/plugged')
@@ -31,6 +32,6 @@ filetype plugin on       " may already be in your .vimrc
 
 augroup pencil
   autocmd!
-  autocmd FileType markdown,mkd call pencil#init('wrap':'soft')
-  autocmd FileType text         call pencil#init('wrap':'soft')
+  autocmd FileType markdown,mkd,md call pencil#init({'wrap': 'soft'})
+  autocmd FileType text         call pencil#init({'wrap': 'soft'})
 augroup END
